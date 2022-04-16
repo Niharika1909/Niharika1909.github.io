@@ -1,0 +1,1051 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "productLineCode": {
+      "type": "string"
+    },
+    "fees": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "amount": {
+              "type": "integer"
+            },
+            "taxAmounts": {
+              "type": "object",
+              "properties": {
+                "gstOrHst": {
+                  "type": "integer"
+                },
+                "pstOrQst": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "gstOrHst",
+                "pstOrQst"
+              ]
+            },
+            "type": {
+              "type": "string"
+            },
+            "broadformFilingRequired": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "amount",
+            "taxAmounts",
+            "type",
+            "broadformFilingRequired"
+          ]
+        }
+      ]
+    },
+    "sourceSystem": {
+      "type": "string"
+    },
+    "firstPaymentDate": {
+      "type": "string"
+    },
+    "totalTaxAmounts": {
+      "type": "object",
+      "properties": {
+        "gstOrHst": {
+          "type": "null"
+        },
+        "qstOrPst": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "gstOrHst",
+        "qstOrPst"
+      ]
+    },
+    "masterDataCreationTimeStamp": {
+      "type": "string"
+    },
+    "contractRateTypeCode": {
+      "type": "string"
+    },
+    "productUseCode": {
+      "type": "string"
+    },
+    "isDigitallySigned": {
+      "type": "boolean"
+    },
+    "paymentFrequencyCode": {
+      "type": "string"
+    },
+    "contractBeginDate": {
+      "type": "string"
+    },
+    "countryCode": {
+      "type": "string"
+    },
+    "downPayment": {
+      "type": "integer"
+    },
+    "paymentSchedule": {
+      "type": "object",
+      "properties": {
+        "totalPaymentAmount": {
+          "type": "number"
+        },
+        "totalPrincipalAmount": {
+          "type": "integer"
+        },
+        "totalInterestAmount": {
+          "type": "number"
+        },
+        "isIrregularSchedule": {
+          "type": "string"
+        },
+        "payments": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "remainingBalanceAmount": {
+                  "type": "number"
+                },
+                "interestAmount": {
+                  "type": "number"
+                },
+                "paymentDate": {
+                  "type": "string"
+                },
+                "paymentAmount": {
+                  "type": "number"
+                },
+                "principalAmount": {
+                  "type": "number"
+                },
+                "paymentType": {
+                  "type": "string"
+                },
+                "unpaidInterestAmount": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "remainingBalanceAmount",
+                "interestAmount",
+                "paymentDate",
+                "paymentAmount",
+                "principalAmount",
+                "paymentType",
+                "unpaidInterestAmount"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "totalPaymentAmount",
+        "totalPrincipalAmount",
+        "totalInterestAmount",
+        "isIrregularSchedule",
+        "payments"
+      ]
+    },
+    "id": {
+      "type": "integer"
+    },
+    "totalAmountFinanced": {
+      "type": "integer"
+    },
+    "totalFeesCharged": {
+      "type": "integer"
+    },
+    "createdById": {
+      "type": "string"
+    },
+    "financeProductClassCode": {
+      "type": "string"
+    },
+    "totalCashBackAmount": {
+      "type": "string"
+    },
+    "numberOfPayments": {
+      "type": "string"
+    },
+    "insurancePremiumFinanced": {
+      "type": "integer"
+    },
+    "totalParticipationAmount": {
+      "type": "integer"
+    },
+    "totalRentalAmountApplied": {
+      "type": "integer"
+    },
+    "paperGrade": {
+      "type": "string"
+    },
+    "sourceSystemId": {
+      "type": "string"
+    },
+    "financeProductCode": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "totalTradeInValue": {
+      "type": "integer"
+    },
+    "tradeIns": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "payoutAmount": {
+              "type": "integer"
+            },
+            "payeeName": {
+              "type": "string"
+            },
+            "payeeAccountNumber": {
+              "type": "string"
+            },
+            "modelMake": {
+              "type": "string"
+            },
+            "finalTradeAllowance": {
+              "type": "integer"
+            },
+            "tradeInDescription": {
+              "type": "string"
+            },
+            "modelNumber": {
+              "type": "string"
+            },
+            "modelYear": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "payoutAmount",
+            "payeeName",
+            "payeeAccountNumber",
+            "modelMake",
+            "finalTradeAllowance",
+            "tradeInDescription",
+            "modelNumber",
+            "modelYear"
+          ]
+        }
+      ]
+    },
+    "equipments": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "insurance": {
+              "type": "object",
+              "properties": {
+                "premiumFinanced": {
+                  "type": "boolean"
+                },
+                "provider": {
+                  "type": "string"
+                },
+                "premium": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "premiumFinanced",
+                "provider",
+                "premium"
+              ]
+            },
+            "serialNumber": {
+              "type": "string"
+            },
+            "currentMeterValue": {
+              "type": "string"
+            },
+            "year": {
+              "type": "null"
+            },
+            "dealerCost": {
+              "type": "integer"
+            },
+            "addOnAmounts": {
+              "type": "object",
+              "properties": {
+                "warranty": {
+                  "type": "null"
+                },
+                "advanceDisposalFee": {
+                  "type": "null"
+                },
+                "batteryLevy": {
+                  "type": "null"
+                },
+                "preventiveMaintenance": {
+                  "type": "null"
+                }
+              },
+              "required": [
+                "warranty",
+                "advanceDisposalFee",
+                "batteryLevy",
+                "preventiveMaintenance"
+              ]
+            },
+            "manufacturerCode": {
+              "type": "string"
+            },
+            "classification": {
+              "type": "object",
+              "properties": {
+                "division": {
+                  "type": "string"
+                },
+                "productLine": {
+                  "type": "string"
+                },
+                "productFamily": {
+                  "type": "string"
+                },
+                "series": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "model": {
+                  "type": "string"
+                },
+                "platform": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "division",
+                "productLine",
+                "productFamily",
+                "series",
+                "description",
+                "model",
+                "platform"
+              ]
+            },
+            "financingPurpose": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "code"
+              ]
+            },
+            "equipmentLocation": {
+              "type": "object",
+              "properties": {
+                "line2": {
+                  "type": "string"
+                },
+                "city": {
+                  "type": "string"
+                },
+                "line1": {
+                  "type": "string"
+                },
+                "countryCode": {
+                  "type": "string"
+                },
+                "postalCode": {
+                  "type": "object",
+                  "properties": {
+                    "extension": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "extension",
+                    "code"
+                  ]
+                }
+              },
+              "required": [
+                "line2",
+                "city",
+                "line1",
+                "countryCode",
+                "postalCode"
+              ]
+            },
+            "sellingPrice": {
+              "type": "integer"
+            },
+            "equipmentDetail": {
+              "type": "object",
+              "properties": {
+                "attachmentCost": {
+                  "type": "null"
+                },
+                "serviceAgreementAmount": {
+                  "type": "null"
+                },
+                "otherCost": {
+                  "type": "null"
+                },
+                "setupCost": {
+                  "type": "null"
+                },
+                "newUsedCode": {
+                  "type": "string"
+                },
+                "fuelType": {
+                  "type": "null"
+                },
+                "baseUnitCost": {
+                  "type": "null"
+                },
+                "powerGardAmount": {
+                  "type": "null"
+                },
+                "isSelfPropelled": {
+                  "type": "null"
+                },
+                "meterType": {
+                  "type": "string"
+                },
+                "freightCost": {
+                  "type": "null"
+                }
+              },
+              "required": [
+                "attachmentCost",
+                "serviceAgreementAmount",
+                "otherCost",
+                "setupCost",
+                "newUsedCode",
+                "fuelType",
+                "baseUnitCost",
+                "powerGardAmount",
+                "isSelfPropelled",
+                "meterType",
+                "freightCost"
+              ]
+            },
+            "equipmentUsageCode": {
+              "type": "string"
+            },
+            "equipmentValue": {
+              "type": "integer"
+            },
+            "modelNumber": {
+              "type": "string"
+            },
+            "rentalAmountApplied": {
+              "type": "string"
+            },
+            "taxAmounts": {
+              "type": "object",
+              "properties": {
+                "gstOrHst": {
+                  "type": "null"
+                },
+                "qstOrPst": {
+                  "type": "null"
+                }
+              },
+              "required": [
+                "gstOrHst",
+                "qstOrPst"
+              ]
+            },
+            "rateDetail": {
+              "type": "object",
+              "properties": {
+                "maxTerm": {
+                  "type": "string"
+                },
+                "participationAmount": {
+                  "type": "null"
+                },
+                "rateType": {
+                  "type": "string"
+                },
+                "rate": {
+                  "type": "number"
+                },
+                "interestRateType": {
+                  "type": "string"
+                },
+                "minTerm": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "maxTerm",
+                "participationAmount",
+                "rateType",
+                "rate",
+                "interestRateType",
+                "minTerm"
+              ]
+            }
+          },
+          "required": [
+            "insurance",
+            "serialNumber",
+            "currentMeterValue",
+            "year",
+            "dealerCost",
+            "addOnAmounts",
+            "manufacturerCode",
+            "classification",
+            "financingPurpose",
+            "equipmentLocation",
+            "sellingPrice",
+            "equipmentDetail",
+            "equipmentUsageCode",
+            "equipmentValue",
+            "modelNumber",
+            "rentalAmountApplied",
+            "taxAmounts",
+            "rateDetail"
+          ]
+        }
+      ]
+    },
+    "contractTermInMonths": {
+      "type": "integer"
+    },
+    "dealer": {
+      "type": "object",
+      "properties": {
+        "shipToLocation": {
+          "type": "object",
+          "properties": {
+            "dealerNumber": {
+              "type": "string"
+            },
+            "dealerName": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "dealerNumber",
+            "dealerName"
+          ]
+        },
+        "soldToLocation": {
+          "type": "object",
+          "properties": {
+            "dealerNumber": {
+              "type": "string"
+            },
+            "dealerName": {
+              "type": "string"
+            },
+            "address": {
+              "type": "object",
+              "properties": {
+                "stateCode": {
+                  "type": "string"
+                },
+                "line2": {
+                  "type": "null"
+                },
+                "city": {
+                  "type": "string"
+                },
+                "line1": {
+                  "type": "string"
+                },
+                "countryCode": {
+                  "type": "string"
+                },
+                "postalCode": {
+                  "type": "object",
+                  "properties": {
+                    "extension": {
+                      "type": "null"
+                    },
+                    "code": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "extension",
+                    "code"
+                  ]
+                }
+              },
+              "required": [
+                "stateCode",
+                "line2",
+                "city",
+                "line1",
+                "countryCode",
+                "postalCode"
+              ]
+            }
+          },
+          "required": [
+            "dealerNumber",
+            "dealerName",
+            "address"
+          ]
+        },
+        "phone": {
+          "type": "object",
+          "properties": {
+            "number": {
+              "type": "integer"
+            },
+            "extension": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "number",
+            "extension"
+          ]
+        },
+        "contactName": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "shipToLocation",
+        "soldToLocation",
+        "phone",
+        "contactName",
+        "email"
+      ]
+    },
+    "contractRate": {
+      "type": "integer"
+    },
+    "customer": {
+      "type": "object",
+      "properties": {
+        "primaryApplicant": {
+          "type": "object",
+          "properties": {
+            "ccan": {
+              "type": "string"
+            },
+            "individual": {
+              "type": "object",
+              "properties": {
+                "legalName": {
+                  "type": "string"
+                },
+                "firstName": {
+                  "type": "string"
+                },
+                "lastName": {
+                  "type": "string"
+                },
+                "phone": {
+                  "type": "object",
+                  "properties": {
+                    "number": {
+                      "type": "string"
+                    },
+                    "extension": {
+                      "type": "null"
+                    }
+                  },
+                  "required": [
+                    "number",
+                    "extension"
+                  ]
+                },
+                "isUSCitizen": {
+                  "type": "string"
+                },
+                "isPermResident": {
+                  "type": "string"
+                },
+                "middleName": {
+                  "type": "string"
+                },
+                "dateOfBirth": {
+                  "type": "string"
+                },
+                "suffix": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "legalName",
+                "firstName",
+                "lastName",
+                "phone",
+                "isUSCitizen",
+                "isPermResident",
+                "middleName",
+                "dateOfBirth",
+                "suffix"
+              ]
+            },
+            "mailingAddress": {
+              "type": "object",
+              "properties": {
+                "stateCode": {
+                  "type": "string"
+                },
+                "city": {
+                  "type": "string"
+                },
+                "line1": {
+                  "type": "string"
+                },
+                "countryCode": {
+                  "type": "string"
+                },
+                "postalCode": {
+                  "type": "object",
+                  "properties": {
+                    "extension": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "extension",
+                    "code"
+                  ]
+                }
+              },
+              "required": [
+                "stateCode",
+                "city",
+                "line1",
+                "countryCode",
+                "postalCode"
+              ]
+            },
+            "governmentIDs": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "number": {
+                      "type": "string"
+                    },
+                    "typeCode": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "number",
+                    "typeCode"
+                  ]
+                }
+              ]
+            },
+            "customerId": {
+              "type": "string"
+            },
+            "physicalAddress": {
+              "type": "object",
+              "properties": {
+                "stateCode": {
+                  "type": "string"
+                },
+                "city": {
+                  "type": "string"
+                },
+                "line1": {
+                  "type": "string"
+                },
+                "countryCode": {
+                  "type": "string"
+                },
+                "postalCode": {
+                  "type": "object",
+                  "properties": {
+                    "extension": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "extension",
+                    "code"
+                  ]
+                }
+              },
+              "required": [
+                "stateCode",
+                "city",
+                "line1",
+                "countryCode",
+                "postalCode"
+              ]
+            },
+            "typeCode": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "ccan",
+            "individual",
+            "mailingAddress",
+            "governmentIDs",
+            "customerId",
+            "physicalAddress",
+            "typeCode"
+          ]
+        },
+        "coApplicants": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "ccan": {
+                  "type": "string"
+                },
+                "individual": {
+                  "type": "object",
+                  "properties": {
+                    "legalName": {
+                      "type": "string"
+                    },
+                    "firstName": {
+                      "type": "string"
+                    },
+                    "lastName": {
+                      "type": "string"
+                    },
+                    "phone": {
+                      "type": "object",
+                      "properties": {
+                        "number": {
+                          "type": "string"
+                        },
+                        "extension": {
+                          "type": "null"
+                        }
+                      },
+                      "required": [
+                        "number",
+                        "extension"
+                      ]
+                    },
+                    "isUSCitizen": {
+                      "type": "string"
+                    },
+                    "isPermResident": {
+                      "type": "string"
+                    },
+                    "middleName": {
+                      "type": "string"
+                    },
+                    "dateOfBirth": {
+                      "type": "string"
+                    },
+                    "suffix": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "legalName",
+                    "firstName",
+                    "lastName",
+                    "phone",
+                    "isUSCitizen",
+                    "isPermResident",
+                    "middleName",
+                    "dateOfBirth",
+                    "suffix"
+                  ]
+                },
+                "mailingAddress": {
+                  "type": "object",
+                  "properties": {
+                    "stateCode": {
+                      "type": "string"
+                    },
+                    "city": {
+                      "type": "string"
+                    },
+                    "line1": {
+                      "type": "string"
+                    },
+                    "countryCode": {
+                      "type": "string"
+                    },
+                    "postalCode": {
+                      "type": "object",
+                      "properties": {
+                        "extension": {
+                          "type": "string"
+                        },
+                        "code": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "extension",
+                        "code"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "stateCode",
+                    "city",
+                    "line1",
+                    "countryCode",
+                    "postalCode"
+                  ]
+                },
+                "governmentIDs": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "number": {
+                          "type": "string"
+                        },
+                        "typeCode": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "number",
+                        "typeCode"
+                      ]
+                    }
+                  ]
+                },
+                "customerId": {
+                  "type": "string"
+                },
+                "physicalAddress": {
+                  "type": "object",
+                  "properties": {
+                    "stateCode": {
+                      "type": "string"
+                    },
+                    "city": {
+                      "type": "string"
+                    },
+                    "line1": {
+                      "type": "string"
+                    },
+                    "countryCode": {
+                      "type": "string"
+                    },
+                    "postalCode": {
+                      "type": "object",
+                      "properties": {
+                        "extension": {
+                          "type": "string"
+                        },
+                        "code": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "extension",
+                        "code"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "stateCode",
+                    "city",
+                    "line1",
+                    "countryCode",
+                    "postalCode"
+                  ]
+                },
+                "typeCode": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "ccan",
+                "individual",
+                "mailingAddress",
+                "governmentIDs",
+                "customerId",
+                "physicalAddress",
+                "typeCode"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "primaryApplicant",
+        "coApplicants"
+      ]
+    }
+  },
+  "required": [
+    "productLineCode",
+    "fees",
+    "sourceSystem",
+    "firstPaymentDate",
+    "totalTaxAmounts",
+    "masterDataCreationTimeStamp",
+    "contractRateTypeCode",
+    "productUseCode",
+    "isDigitallySigned",
+    "paymentFrequencyCode",
+    "contractBeginDate",
+    "countryCode",
+    "downPayment",
+    "paymentSchedule",
+    "id",
+    "totalAmountFinanced",
+    "totalFeesCharged",
+    "createdById",
+    "financeProductClassCode",
+    "totalCashBackAmount",
+    "numberOfPayments",
+    "insurancePremiumFinanced",
+    "totalParticipationAmount",
+    "totalRentalAmountApplied",
+    "paperGrade",
+    "sourceSystemId",
+    "financeProductCode",
+    "version",
+    "totalTradeInValue",
+    "tradeIns",
+    "equipments",
+    "contractTermInMonths",
+    "dealer",
+    "contractRate",
+    "customer"
+  ]
+}
