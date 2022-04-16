@@ -1,0 +1,269 @@
+{
+        "productLineCode": "TRF",
+        "fees": [
+            {
+                "amount": 200,
+                "taxAmounts": {
+                    "gstOrHst": 10,
+                    "pstOrQst": 0
+                },
+                "type": "Total Fees",
+                "broadformFilingRequired": null
+            }
+        ],
+        "sourceSystem": "SALES CENTER",
+        "firstPaymentDate": "01-May-2022",
+        "totalTaxAmounts": {
+            "gstOrHst": null,
+            "qstOrPst": null
+        },
+        "masterDataCreationTimeStamp": "2022-04-07T14:43:13+05:30",
+        "contractRateTypeCode": "FIXED",
+        "productUseCode": "PER",
+        "isDigitallySigned": false,
+        "paymentFrequencyCode": "MTH",
+        "contractBeginDate": "01-Apr-2022",
+        "countryCode": "CA",
+        "downPayment": 1000,
+        "paymentSchedule": {
+            "totalPaymentAmount": 61240.2,
+            "totalPrincipalAmount": 56210,
+            "totalInterestAmount": 5030.2,
+            "isIrregularSchedule": "N",
+            "payments": [
+                {
+                    "remainingBalanceAmount": 24580.68,
+                    "interestAmount": 123.16,
+                    "paymentDate": "01-Jan-2024",
+                    "paymentAmount": 1701.12,
+                    "principalAmount": 1577.96,
+                    "paymentType": "Normal",
+                    "unpaidInterestAmount": 0
+                }
+            ]
+        },
+        "id": 4000000640,
+        "totalAmountFinanced": 56210,
+        "totalFeesCharged": 200,
+        "createdById": "X145114",
+        "financeProductClassCode": "NEW",
+        "totalCashBackAmount": "",
+        "numberOfPayments": "36",
+        "insurancePremiumFinanced": 500,
+        "totalParticipationAmount": 123,
+        "totalRentalAmountApplied": 500,
+        "paperGrade": "",
+        "sourceSystemId": "217",
+        "financeProductCode": "INS",
+        "version": "001",
+        "totalTradeInValue": 0,
+        "tradeIns": [
+            {
+                "payoutAmount": 0,
+                "payeeName": "The Dude",
+                "payeeAccountNumber": "4000398341",
+                "modelMake": "John Deere",
+                "finalTradeAllowance": 2000,
+                "tradeInDescription": "New John Deere 620T",
+                "modelNumber": "620T",
+                "modelYear": "2022"
+            }
+        ],
+        "equipments": [
+            {
+                "insurance": {
+                    "premiumFinanced": true,
+                    "provider": "INDUSTRIAL_ALLIANCE",
+                    "premium": 500
+                },
+                "serialNumber": "RW7610R079732",
+                "currentMeterValue": "12708",
+                "year": null,
+                "dealerCost": 47234,
+                "addOnAmounts": {
+                    "warranty": null,
+                    "advanceDisposalFee": null,
+                    "batteryLevy": null,
+                    "preventiveMaintenance": null
+                },
+                "manufacturerCode": "",
+                "classification": {
+                    "division": "AG & TURF",
+                    "productLine": "LARGE (7,8,9 SERIES)",
+                    "productFamily": "8 FAMILY TRACTORS",
+                    "series": "8R SERIES",
+                    "description": "JOHN DEERE JD 7610 TRACTOR",
+                    "model": "8370R",
+                    "platform": "TRACTORS"
+                },
+                "financingPurpose": {
+                    "name": "",
+                    "code": "NEW"
+                },
+                "equipmentLocation": {
+                    "line2": "",
+                    "city": "",
+                    "line1": "",
+                    "countryCode": "",
+                    "postalCode": {
+                        "extension": "",
+                        "code": ""
+                    }
+                },
+                "sellingPrice": 57000,
+                "equipmentDetail": {
+                    "attachmentCost": null,
+                    "serviceAgreementAmount": null,
+                    "otherCost": null,
+                    "setupCost": null,
+                    "newUsedCode": "N",
+                    "fuelType": null,
+                    "baseUnitCost": null,
+                    "powerGardAmount": null,
+                    "isSelfPropelled": null,
+                    "meterType": "HOURS",
+                    "freightCost": null
+                },
+                "equipmentUsageCode": "",
+                "equipmentValue": 47234,
+                "modelNumber": "7610",
+                "rentalAmountApplied": "",
+                "taxAmounts": {
+                    "gstOrHst": null,
+                    "qstOrPst": null
+                },
+                "rateDetail": {
+                    "maxTerm": "62",
+                    "participationAmount": null,
+                    "rateType": "STANDARD BUY RATE",
+                    "rate": 5.65,
+                    "interestRateType": "",
+                    "minTerm": "1"
+                }
+            }
+        ],
+        "contractTermInMonths": 5,
+        "dealer": {
+            "shipToLocation": {
+                "dealerNumber": "066585",
+                "dealerName": ""
+            },
+            "soldToLocation": {
+                "dealerNumber": "064147",
+                "dealerName": "ERB TURF EQUIPMENT, INC.",
+                "address": {
+                    "stateCode": "IL",
+                    "line2": null,
+                    "city": "Mitchell",
+                    "line1": "1017 E Chain of Rocks Rd",
+                    "countryCode": "US",
+                    "postalCode": {
+                        "extension": null,
+                        "code": "62040"
+                    }
+                }
+            },
+            "phone": {
+                "number": 0,
+                "extension": 0
+            },
+            "contactName": "",
+            "email": "test@11.com"
+        },
+        "contractRate": 12,
+        "customer": {
+            "primaryApplicant": {
+                "ccan": "",
+                "individual": {
+                    "legalName": "TIA J BRETOS",
+                    "firstName": "TIA",
+                    "lastName": "BRETOS",
+                    "phone": {
+                        "number": "8444663655",
+                        "extension": null
+
+                    },
+                    "isUSCitizen": "N",
+                    "isPermResident": "",
+                    "middleName": "J",
+                    "dateOfBirth": "1972-05-09",
+                    "suffix": ""
+                },
+                "mailingAddress": {
+                    "stateCode": "NY",
+                    "city": "CHESTER",
+                    "line1": "97 ELVIS BLVD",
+                    "countryCode": "US",
+                    "postalCode": {
+                        "extension": "",
+                        "code": "10918"
+                    }
+                },
+                "governmentIDs": [
+                    {
+                        "number": "111314399",
+                        "typeCode": "SIN"
+                    }
+                ],
+                "customerId": "7000002849",
+                "physicalAddress": {
+                    "stateCode": "NY",
+                    "city": "CHESTER",
+                    "line1": "97 ELVIS BLVD",
+                    "countryCode": "US",
+                    "postalCode": {
+                        "extension": "",
+                        "code": "10918"
+                    }
+                },
+                "typeCode": "I"
+            },
+            "coApplicants": [
+                {
+                    "ccan": "",
+                    "individual": {
+                        "legalName": "ABDUL-BAAR L BUDINICH",
+                        "firstName": "ABDUL-BAAR",
+                        "lastName": "BUDINICH",
+                        "phone": {
+                            "number": "8444663655",
+                            "extension": null
+                        },
+                        "isUSCitizen": "N",
+                        "isPermResident": "",
+                        "middleName": "L",
+                        "dateOfBirth": "1970-02-16",
+                        "suffix": ""
+                    },
+                    "mailingAddress": {
+                        "stateCode": "AR",
+                        "city": "POCAHONTAS",
+                        "line1": "PO BOX 030",
+                        "countryCode": "US",
+                        "postalCode": {
+                            "extension": "",
+                            "code": "72455"
+                        }
+                    },
+                    "governmentIDs": [
+                        {
+                            "number": "432762242",
+                            "typeCode": "SIN"
+                        }
+                    ],
+                    "customerId": "7000002859",
+                    "physicalAddress": {
+                        "stateCode": "OK",
+                        "city": "IDABEL",
+                        "line1": "696 YORK CT",
+                        "countryCode": "US",
+                        "postalCode": {
+                            "extension": "",
+                            "code": "74745"
+                        }
+                    },
+                    "typeCode": "I"
+                }
+            ]
+        }
+    }
